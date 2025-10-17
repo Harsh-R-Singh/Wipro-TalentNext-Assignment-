@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"] - Employee Portal</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a asp-controller="Home" asp-action="Index">Dashboard</a></li>
+                <li><a asp-controller="Employee" asp-action="Index">Employee List</a></li>
+                <li><a asp-controller="Employee" asp-action="Create">Add Employee</a></li>
+                <li><a asp-controller="Department" asp-action="Index">Departments</a></li>
+                <li><a asp-controller="Account" asp-action="Logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main" class="container">
+        @RenderBody()
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Employee Management Portal</p>
+    </footer>
+</body>
+</html>
